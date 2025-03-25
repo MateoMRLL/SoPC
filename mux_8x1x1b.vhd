@@ -5,12 +5,12 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity mux_8x1x1b is
     Port ( A, B, C, D, E, F, G, H : in  STD_LOGIC;
            sel : in  STD_LOGIC_VECTOR(2 downto 0);
-           O : out STD_LOGIC;
+           O : out STD_LOGIC);
 end mux_8x1x1b;
 
 architecture Behavioral of mux_8x1x1b is
 begin
-    process(S, A, B, C, D, E, F, G, H)
+    process(sel, A, B, C, D, E, F, G, H)
     begin
         -- Utilisation de when else pour la sélection de l'entrée en fonction de S
         O <= A when sel = "000" else
