@@ -9,8 +9,6 @@ end transcoder_3v8;
 
 architecture Behavioral of transcoder_3v8 is
 begin
-    process(A)
-    begin
         -- Utilisation de when else pour la conversion
         O <= "00000001" when A = "000" else
              "00000010" when A = "001" else
@@ -20,5 +18,4 @@ begin
              "00100000" when A = "101" else
              "01000000" when A = "110" else
              "10000000";  -- Cas pour A = "111"
-    end process;
 end Behavioral;

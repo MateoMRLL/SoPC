@@ -10,8 +10,6 @@ end mux_8x1x4b;
 
 architecture Behavioral of mux_8x1x4b is
 begin
-    process(S, A, B, C, D, E, F, G, H)
-    begin
         -- Utilisation de when else pour la sélection de l'entrée en fonction de S
         O <= A when S = "000" else
              B when S = "001" else
@@ -21,5 +19,4 @@ begin
              F when S = "101" else
              G when S = "110" else
              H;  -- S = "111" et donc H est choisi par défaut
-    end process;
 end Behavioral;

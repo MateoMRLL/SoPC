@@ -35,7 +35,7 @@ component counter_3b_E
 port (
 CLK : in std_logic;
 CE : in std_logic;
-O : out std_logic_vector(3 downto 0)
+O : out std_logic_vector(2 downto 0)
 );
 end component counter_3b_E;
 

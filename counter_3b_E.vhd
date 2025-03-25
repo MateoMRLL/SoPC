@@ -7,11 +7,11 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 entity counter_3b_E is
     Port ( CLK : in  STD_LOGIC;
            CE  : in  STD_LOGIC;
-           O   : out STD_LOGIC_VECTOR(3 downto 0));
+           O   : out STD_LOGIC_VECTOR(2 downto 0));
 end counter_3b_E;
 
 architecture Behavioral of counter_3b_E is
-    signal count : STD_LOGIC_VECTOR(3 downto 0) := "0000";
+    signal count : STD_LOGIC_VECTOR(2 downto 0) := "000";
 begin
     process(CLK)
     begin

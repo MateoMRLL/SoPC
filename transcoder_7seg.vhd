@@ -9,8 +9,7 @@ end transcoder_7seg;
 
 architecture Behavioral of transcoder_7seg is
 begin
-    process(A)
-    begin
+
         -- Utilisation de when else pour les différentes valeurs possibles
         O <= "0000001" when A = "0000" else  -- "0"
              "1001111" when A = "0001" else  -- "1"
@@ -23,5 +22,4 @@ begin
              "0000000" when A = "1000" else  -- "8"
              "0000100" when A = "1001" else  -- "9"
              "1111111"; -- Valeur par défaut en cas d'erreur ou valeur invalide
-    end process;
 end Behavioral;
