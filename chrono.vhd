@@ -1,6 +1,6 @@
 library ieee; 
 use ieee.std_logic_1164.all; 
-use ieee.numeric_std.all
+use ieee.numeric_std.all;
 
 ENTITY CHRONOMETRE  IS 
 
@@ -8,13 +8,13 @@ ENTITY CHRONOMETRE  IS
 
   CE_1s : IN std_logic; 
   CLK : IN std_logic; 
-  WAIT_t IN std_logic; 
-  START IN std_logic; 
+  WAIT_t : IN std_logic; 
+  START : IN std_logic; 
   RESET : IN std_logic; 
   sec_unit : OUT std_logic_vector(3 downto 0);
   sec_dec : OUT std_logic_vector(3 downto 0); 
   min_unit : OUT std_logic_vector(3 downto 0); 
-  min_dec : OUT std_logic_vector(3 downto 0); 
+  min_dec : OUT std_logic_vector(3 downto 0)
   ); 
 END CHRONOMETRE; 
 
@@ -28,7 +28,7 @@ port (
 CLK : in std_logic;
 R : in std_logic;
 D : in std_logic; 
-Q : out std_logic;
+Q : out std_logic
 );
 end component BASCULE_CHRONO;
 
@@ -38,7 +38,7 @@ CLK : in std_logic;
 R : in std_logic;
 CE : in std_logic; 
 TC : out std_logic;
-S :out std_logic_vector(3 downto 0); 
+S :out std_logic_vector(3 downto 0)
 );
 end component CPT_SU_CHRONO;
 
@@ -49,7 +49,7 @@ CLK : in std_logic;
 R : in std_logic;
 CE : in std_logic; 
 TC : out std_logic;
-S :out std_logic_vector(3 downto 0); 
+S :out std_logic_vector(3 downto 0)
 );
 end component CPT_SD_CHRONO;
 
@@ -60,7 +60,7 @@ CLK : in std_logic;
 R : in std_logic;
 CE : in std_logic; 
 TC : out std_logic;
-S :out std_logic_vector(3 downto 0); 
+S :out std_logic_vector(3 downto 0) 
 );
 end component CPT_MU_CHRONO;
 
@@ -70,7 +70,7 @@ CLK : in std_logic;
 R : in std_logic;
 CE : in std_logic; 
 TC : out std_logic;
-S :out std_logic_vector(3 downto 0); 
+S :out std_logic_vector(3 downto 0)
 );
 end component CPT_MD_CHRONO;
 
@@ -79,6 +79,8 @@ component COMP_CHRONO
 port (
 in1 : in std_logic_vector(3 downto 0);
 in2 : in std_logic_vector(3 downto 0);
-S : out std_logic; 
+S : out std_logic
 );
 end component COMP_CHRONO;
+
+end behavior;
