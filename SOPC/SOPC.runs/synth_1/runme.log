@@ -7,64 +7,69 @@
   **** SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
   **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
   **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-  **** Start of session at: Wed Mar 26 13:17:01 2025
+  **** Start of session at: Fri Mar 28 18:38:32 2025
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source DISPLAY.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental /home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/utils_1/imports/synth_1/DISPLAY.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/utils_1/imports/synth_1/DISPLAY.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top DISPLAY -part xc7a35tcpg236-1 -flatten_hierarchy none
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 2609
+INFO: [Synth 8-7075] Helper process launched with PID 5724
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1722.469 ; gain = 267.852 ; free physical = 8577 ; free virtual = 16110
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1725.273 ; gain = 298.852 ; free physical = 6321 ; free virtual = 14883
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-9112] actual for formal port 'd' is neither a static name nor a globally static expression [/home/dlanyar/Documents/POLYTECH/SoPC/display.vhd:183]
-INFO: [Synth 8-638] synthesizing module 'DISPLAY' [/home/dlanyar/Documents/POLYTECH/SoPC/display.vhd:25]
-INFO: [Synth 8-3491] module 'counter_3b_E' declared at '/home/dlanyar/Documents/POLYTECH/SoPC/counter_3b_E.vhd:7' bound to instance 'U0' of component 'counter_3b_E' [/home/dlanyar/Documents/POLYTECH/SoPC/display.vhd:119]
-INFO: [Synth 8-638] synthesizing module 'counter_3b_E' [/home/dlanyar/Documents/POLYTECH/SoPC/counter_3b_E.vhd:13]
-INFO: [Synth 8-256] done synthesizing module 'counter_3b_E' (0#1) [/home/dlanyar/Documents/POLYTECH/SoPC/counter_3b_E.vhd:13]
-INFO: [Synth 8-3491] module 'transcoder_3v8' declared at '/home/dlanyar/Documents/POLYTECH/SoPC/transcoder_3v8.vhd:5' bound to instance 'U1' of component 'transcoder_3v8' [/home/dlanyar/Documents/POLYTECH/SoPC/display.vhd:126]
-INFO: [Synth 8-638] synthesizing module 'transcoder_3v8' [/home/dlanyar/Documents/POLYTECH/SoPC/transcoder_3v8.vhd:10]
-INFO: [Synth 8-256] done synthesizing module 'transcoder_3v8' (0#1) [/home/dlanyar/Documents/POLYTECH/SoPC/transcoder_3v8.vhd:10]
-INFO: [Synth 8-3491] module 'register_8b1' declared at '/home/dlanyar/Documents/POLYTECH/SoPC/register_8b1.vhd:5' bound to instance 'U2' of component 'register_8b1' [/home/dlanyar/Documents/POLYTECH/SoPC/display.vhd:132]
-INFO: [Synth 8-638] synthesizing module 'register_8b1' [/home/dlanyar/Documents/POLYTECH/SoPC/register_8b1.vhd:11]
-INFO: [Synth 8-256] done synthesizing module 'register_8b1' (0#1) [/home/dlanyar/Documents/POLYTECH/SoPC/register_8b1.vhd:11]
-INFO: [Synth 8-3491] module 'Tregister_1b' declared at '/home/dlanyar/Documents/POLYTECH/SoPC/Tregister_1b.vhd:5' bound to instance 'U3' of component 'Tregister_1b' [/home/dlanyar/Documents/POLYTECH/SoPC/display.vhd:139]
-INFO: [Synth 8-638] synthesizing module 'Tregister_1b' [/home/dlanyar/Documents/POLYTECH/SoPC/Tregister_1b.vhd:11]
-INFO: [Synth 8-256] done synthesizing module 'Tregister_1b' (0#1) [/home/dlanyar/Documents/POLYTECH/SoPC/Tregister_1b.vhd:11]
-INFO: [Synth 8-3491] module 'mux_8x1x1b' declared at '/home/dlanyar/Documents/POLYTECH/SoPC/mux_8x1x1b.vhd:5' bound to instance 'U4' of component 'mux_8x1x1b' [/home/dlanyar/Documents/POLYTECH/SoPC/display.vhd:146]
-INFO: [Synth 8-638] synthesizing module 'mux_8x1x1b' [/home/dlanyar/Documents/POLYTECH/SoPC/mux_8x1x1b.vhd:11]
-INFO: [Synth 8-256] done synthesizing module 'mux_8x1x1b' (0#1) [/home/dlanyar/Documents/POLYTECH/SoPC/mux_8x1x1b.vhd:11]
-INFO: [Synth 8-3491] module 'mux_8x1x4b' declared at '/home/dlanyar/Documents/POLYTECH/SoPC/mux_8x1x4b.vhd:5' bound to instance 'U5' of component 'mux_8x1x4b' [/home/dlanyar/Documents/POLYTECH/SoPC/display.vhd:160]
-INFO: [Synth 8-638] synthesizing module 'mux_8x1x4b' [/home/dlanyar/Documents/POLYTECH/SoPC/mux_8x1x4b.vhd:11]
-INFO: [Synth 8-256] done synthesizing module 'mux_8x1x4b' (0#1) [/home/dlanyar/Documents/POLYTECH/SoPC/mux_8x1x4b.vhd:11]
-INFO: [Synth 8-3491] module 'transcoder_7seg' declared at '/home/dlanyar/Documents/POLYTECH/SoPC/transcoder_7seg.vhd:5' bound to instance 'U6' of component 'transcoder_7seg' [/home/dlanyar/Documents/POLYTECH/SoPC/display.vhd:174]
-INFO: [Synth 8-638] synthesizing module 'transcoder_7seg' [/home/dlanyar/Documents/POLYTECH/SoPC/transcoder_7seg.vhd:10]
-INFO: [Synth 8-256] done synthesizing module 'transcoder_7seg' (0#1) [/home/dlanyar/Documents/POLYTECH/SoPC/transcoder_7seg.vhd:10]
-INFO: [Synth 8-3491] module 'register_8b2' declared at '/home/dlanyar/Documents/POLYTECH/SoPC/register_8b2.vhd:5' bound to instance 'U7' of component 'register_8b2' [/home/dlanyar/Documents/POLYTECH/SoPC/display.vhd:180]
-INFO: [Synth 8-638] synthesizing module 'register_8b2' [/home/dlanyar/Documents/POLYTECH/SoPC/register_8b2.vhd:11]
-INFO: [Synth 8-256] done synthesizing module 'register_8b2' (0#1) [/home/dlanyar/Documents/POLYTECH/SoPC/register_8b2.vhd:11]
-INFO: [Synth 8-256] done synthesizing module 'DISPLAY' (0#1) [/home/dlanyar/Documents/POLYTECH/SoPC/display.vhd:25]
+WARNING: [Synth 8-9112] actual for formal port 'd' is neither a static name nor a globally static expression [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/SoPC/display.vhd:183]
+INFO: [Synth 8-638] synthesizing module 'DISPLAY' [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/SoPC/display.vhd:25]
+INFO: [Synth 8-3491] module 'counter_3b_E' declared at '/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/SoPC/counter_3b_E.vhd:7' bound to instance 'U0' of component 'counter_3b_E' [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/SoPC/display.vhd:119]
+INFO: [Synth 8-638] synthesizing module 'counter_3b_E' [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/SoPC/counter_3b_E.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'counter_3b_E' (0#1) [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/SoPC/counter_3b_E.vhd:13]
+INFO: [Synth 8-3491] module 'transcoder_3v8' declared at '/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/SoPC/transcoder_3v8.vhd:5' bound to instance 'U1' of component 'transcoder_3v8' [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/SoPC/display.vhd:126]
+INFO: [Synth 8-638] synthesizing module 'transcoder_3v8' [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/SoPC/transcoder_3v8.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'transcoder_3v8' (0#1) [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/SoPC/transcoder_3v8.vhd:10]
+INFO: [Synth 8-3491] module 'register_8b1' declared at '/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/SoPC/register_8b1.vhd:5' bound to instance 'U2' of component 'register_8b1' [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/SoPC/display.vhd:132]
+INFO: [Synth 8-638] synthesizing module 'register_8b1' [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/SoPC/register_8b1.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'register_8b1' (0#1) [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/SoPC/register_8b1.vhd:11]
+INFO: [Synth 8-3491] module 'Tregister_1b' declared at '/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/SoPC/Tregister_1b.vhd:5' bound to instance 'U3' of component 'Tregister_1b' [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/SoPC/display.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'Tregister_1b' [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/SoPC/Tregister_1b.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'Tregister_1b' (0#1) [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/SoPC/Tregister_1b.vhd:11]
+INFO: [Synth 8-3491] module 'mux_8x1x1b' declared at '/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/SoPC/mux_8x1x1b.vhd:5' bound to instance 'U4' of component 'mux_8x1x1b' [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/SoPC/display.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'mux_8x1x1b' [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/SoPC/mux_8x1x1b.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'mux_8x1x1b' (0#1) [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/SoPC/mux_8x1x1b.vhd:11]
+INFO: [Synth 8-3491] module 'mux_8x1x4b' declared at '/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/SoPC/mux_8x1x4b.vhd:5' bound to instance 'U5' of component 'mux_8x1x4b' [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/SoPC/display.vhd:160]
+INFO: [Synth 8-638] synthesizing module 'mux_8x1x4b' [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/SoPC/mux_8x1x4b.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'mux_8x1x4b' (0#1) [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/SoPC/mux_8x1x4b.vhd:11]
+INFO: [Synth 8-3491] module 'transcoder_7seg' declared at '/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/SoPC/transcoder_7seg.vhd:5' bound to instance 'U6' of component 'transcoder_7seg' [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/SoPC/display.vhd:174]
+INFO: [Synth 8-638] synthesizing module 'transcoder_7seg' [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/SoPC/transcoder_7seg.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'transcoder_7seg' (0#1) [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/SoPC/transcoder_7seg.vhd:10]
+INFO: [Synth 8-3491] module 'register_8b2' declared at '/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/SoPC/register_8b2.vhd:5' bound to instance 'U7' of component 'register_8b2' [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/SoPC/display.vhd:180]
+INFO: [Synth 8-638] synthesizing module 'register_8b2' [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/SoPC/register_8b2.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'register_8b2' (0#1) [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/SoPC/register_8b2.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'DISPLAY' (0#1) [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/SoPC/display.vhd:25]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1793.438 ; gain = 338.820 ; free physical = 8515 ; free virtual = 16047
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1797.242 ; gain = 370.820 ; free physical = 6227 ; free virtual = 14792
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1811.250 ; gain = 356.633 ; free physical = 8519 ; free virtual = 16051
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1815.055 ; gain = 388.633 ; free physical = 6221 ; free virtual = 14786
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
----------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1819.254 ; gain = 364.637 ; free physical = 8519 ; free virtual = 16046
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1823.059 ; gain = 396.637 ; free physical = 6221 ; free virtual = 14786
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1833.199 ; gain = 378.582 ; free physical = 8505 ; free virtual = 16034
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1839.074 ; gain = 412.652 ; free physical = 6203 ; free virtual = 14771
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
@@ -97,20 +102,20 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1929.145 ; gain = 474.527 ; free physical = 8323 ; free virtual = 15903
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1932.082 ; gain = 505.660 ; free physical = 6055 ; free virtual = 14660
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1935.082 ; gain = 480.465 ; free physical = 8321 ; free virtual = 15902
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1938.020 ; gain = 511.598 ; free physical = 6055 ; free virtual = 14660
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1935.082 ; gain = 480.465 ; free physical = 8320 ; free virtual = 15900
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1946.027 ; gain = 519.605 ; free physical = 6055 ; free virtual = 14660
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -122,19 +127,19 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2084.895 ; gain = 630.277 ; free physical = 8160 ; free virtual = 15753
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2087.840 ; gain = 661.418 ; free physical = 5944 ; free virtual = 14550
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2084.895 ; gain = 630.277 ; free physical = 8160 ; free virtual = 15753
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2087.840 ; gain = 661.418 ; free physical = 5944 ; free virtual = 14550
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2084.895 ; gain = 630.277 ; free physical = 8160 ; free virtual = 15753
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2087.840 ; gain = 661.418 ; free physical = 5944 ; free virtual = 14550
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -176,29 +181,29 @@ Report Instance Areas:
 |9     |  U7     |register_8b2    |     8|
 +------+---------+----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2084.895 ; gain = 630.277 ; free physical = 8160 ; free virtual = 15753
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2087.840 ; gain = 661.418 ; free physical = 5944 ; free virtual = 14550
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2084.895 ; gain = 630.277 ; free physical = 8160 ; free virtual = 15753
-Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2084.902 ; gain = 630.277 ; free physical = 8160 ; free virtual = 15753
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2087.840 ; gain = 661.418 ; free physical = 5944 ; free virtual = 14550
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2087.848 ; gain = 661.418 ; free physical = 5944 ; free virtual = 14550
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2098.770 ; gain = 0.000 ; free physical = 8138 ; free virtual = 15734
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2102.715 ; gain = 0.000 ; free physical = 5928 ; free virtual = 14534
 INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2214.375 ; gain = 0.000 ; free physical = 8101 ; free virtual = 15700
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2217.320 ; gain = 0.000 ; free physical = 5947 ; free virtual = 14562
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 Synth Design complete | Checksum: 43b6621c
 INFO: [Common 17-83] Releasing license: Synthesis
-38 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+42 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 2214.375 ; gain = 759.770 ; free physical = 8101 ; free virtual = 15700
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1481.431; main = 1481.431; forked = 269.374
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 2745.836; main = 2214.379; forked = 909.664
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2238.387 ; gain = 0.000 ; free physical = 8100 ; free virtual = 15699
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:19 . Memory (MB): peak = 2217.320 ; gain = 790.910 ; free physical = 5947 ; free virtual = 14562
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1485.760; main = 1485.760; forked = 267.964
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 2754.680; main = 2217.324; forked = 909.664
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2241.332 ; gain = 0.000 ; free physical = 5947 ; free virtual = 14562
 INFO: [Common 17-1381] The checkpoint '/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.runs/synth_1/DISPLAY.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file DISPLAY_utilization_synth.rpt -pb DISPLAY_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Mar 26 13:17:28 2025...
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 28 18:38:56 2025...

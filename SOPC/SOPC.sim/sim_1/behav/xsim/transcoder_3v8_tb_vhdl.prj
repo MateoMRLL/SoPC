@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../SOPC.srcs/sources_1/imports/SoPC/transcoder_3v8.vhd" \
+"../../../../SOPC.srcs/sim_1/imports/SoPC/transcoder_3v8_tb.vhd" \
+
+# Do not sort compile order
+nosort

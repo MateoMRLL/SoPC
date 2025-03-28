@@ -71,15 +71,15 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
-  /home/dlanyar/Documents/POLYTECH/SoPC/Tregister_1b.vhd
-  /home/dlanyar/Documents/POLYTECH/SoPC/counter_3b_E.vhd
-  /home/dlanyar/Documents/POLYTECH/SoPC/mux_8x1x1b.vhd
-  /home/dlanyar/Documents/POLYTECH/SoPC/mux_8x1x4b.vhd
-  /home/dlanyar/Documents/POLYTECH/SoPC/register_8b1.vhd
-  /home/dlanyar/Documents/POLYTECH/SoPC/register_8b2.vhd
-  /home/dlanyar/Documents/POLYTECH/SoPC/transcoder_3v8.vhd
-  /home/dlanyar/Documents/POLYTECH/SoPC/transcoder_7seg.vhd
-  /home/dlanyar/Documents/POLYTECH/SoPC/display.vhd
+  /home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/SoPC/Tregister_1b.vhd
+  /home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/SoPC/counter_3b_E.vhd
+  /home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/SoPC/mux_8x1x1b.vhd
+  /home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/SoPC/mux_8x1x4b.vhd
+  /home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/SoPC/register_8b1.vhd
+  /home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/SoPC/register_8b2.vhd
+  /home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/SoPC/transcoder_3v8.vhd
+  /home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/SoPC/transcoder_7seg.vhd
+  /home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/SoPC/display.vhd
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -91,6 +91,8 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental /home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/utils_1/imports/synth_1/DISPLAY.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
