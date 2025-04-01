@@ -1,15 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1743183509" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/DISPLAY.dcp">
-  <File Type="RDS-DCP" Name="DISPLAY.dcp"/>
-  <File Type="RDS-RDS" Name="DISPLAY.vds"/>
-  <File Type="REPORTS-TCL" Name="DISPLAY_reports.tcl"/>
-  <File Type="PA-TCL" Name="DISPLAY.tcl"/>
-  <File Type="RDS-UTIL" Name="DISPLAY_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="DISPLAY_utilization_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1743497638" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/DISPLAY.dcp">
+  <File Type="VDS-TIMINGSUMMARY" Name="CHRONOMETRE_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="CHRONOMETRE.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="CHRONOMETRE_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="CHRONOMETRE_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="CHRONOMETRE_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="CHRONOMETRE.vds"/>
+  <File Type="REPORTS-TCL" Name="CHRONOMETRE_reports.tcl"/>
+  <File Type="VDS-TIMING-PB" Name="CHRONOMETRE_timing_summary_synth.pb"/>
+  <File Type="PA-TCL" Name="CHRONOMETRE.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/SoPC/COMP_CHRONO.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../COMP_CHRONO.vhd"/>
+        <Attr Name="ImportTime" Val="1743496946"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SoPC/CPT_DEC_CHRONO.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../CPT_DEC_CHRONO.vhd"/>
+        <Attr Name="ImportTime" Val="1743496098"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SoPC/CPT_UNIT_CHRONO.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../CPT_UNIT_CHRONO.vhd"/>
+        <Attr Name="ImportTime" Val="1743496066"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SoPC/chrono.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../chrono.vhd"/>
+        <Attr Name="ImportTime" Val="1743497441"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/SoPC/Tregister_1b.vhd">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../Tregister_1b.vhd"/>
         <Attr Name="ImportTime" Val="1742901492"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -18,6 +54,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/SoPC/counter_3b_E.vhd">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../counter_3b_E.vhd"/>
         <Attr Name="ImportTime" Val="1742906546"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -26,6 +63,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/SoPC/mux_8x1x1b.vhd">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../mux_8x1x1b.vhd"/>
         <Attr Name="ImportTime" Val="1742906194"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -34,6 +72,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/SoPC/mux_8x1x4b.vhd">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../mux_8x1x4b.vhd"/>
         <Attr Name="ImportTime" Val="1742906224"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -42,6 +81,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/SoPC/register_8b1.vhd">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../register_8b1.vhd"/>
         <Attr Name="ImportTime" Val="1742901392"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -50,6 +90,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/SoPC/register_8b2.vhd">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../register_8b2.vhd"/>
         <Attr Name="ImportTime" Val="1742901392"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -58,6 +99,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/SoPC/transcoder_3v8.vhd">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../transcoder_3v8.vhd"/>
         <Attr Name="ImportTime" Val="1742906278"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -66,6 +108,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/SoPC/transcoder_7seg.vhd">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../transcoder_7seg.vhd"/>
         <Attr Name="ImportTime" Val="1742906272"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -74,6 +117,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/SoPC/display.vhd">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../display.vhd"/>
         <Attr Name="ImportTime" Val="1742906464"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -82,8 +126,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="DISPLAY"/>
-      <Option Name="TopAutoSet" Val="TRUE"/>
+      <Option Name="TopModule" Val="CHRONOMETRE"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
@@ -99,6 +142,7 @@
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="UsedInSteps" Val="synth_1_copy_1"/>
         <Attr Name="AutoDcp" Val="1"/>
       </FileInfo>
     </File>
@@ -107,7 +151,9 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
     <Step Id="synth_design">
       <Option Id="FlattenHierarchy">1</Option>
     </Step>

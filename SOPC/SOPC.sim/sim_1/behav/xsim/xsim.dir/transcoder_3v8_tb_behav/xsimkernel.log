@@ -2,3 +2,6 @@ Running: xsim.dir/transcoder_3v8_tb_behav/xsimk -simmode gui -wdb transcoder_3v8
 Design successfully loaded
 Design Loading Memory Usage: 177584 KB (Peak: 177584 KB)
 Design Loading CPU Usage: 1310 ms
+Simulation completed
+Simulation Memory Usage: 259320 KB (Peak: 316852 KB)
+Simulation CPU Usage: 1310 ms

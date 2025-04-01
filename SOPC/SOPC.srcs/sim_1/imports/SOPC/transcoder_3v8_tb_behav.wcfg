@@ -11,12 +11,12 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="165.465 ns"></ZoomEndTime>
+      <ZoomEndTime time="127.201 ns"></ZoomEndTime>
       <Cursor1Time time="110.600 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="276"></NameColumnWidth>
-      <ValueColumnWidth column_width="108"></ValueColumnWidth>
+      <ValueColumnWidth column_width="112"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="2" />
    <wvobject type="array" fp_name="/transcoder_3v8_tb/A">
@@ -28,6 +28,5 @@
       <obj_property name="ElementShortName">O[7:0]</obj_property>
       <obj_property name="ObjectShortName">O[7:0]</obj_property>
       <obj_property name="isExpanded"></obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
 </wave_config>

@@ -90,8 +90,41 @@
   <FileSets Version="1" Minor="32">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
       <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sources_1/imports/SoPC/COMP_CHRONO.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../COMP_CHRONO.vhd"/>
+          <Attr Name="ImportTime" Val="1743496946"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/SoPC/CPT_DEC_CHRONO.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../CPT_DEC_CHRONO.vhd"/>
+          <Attr Name="ImportTime" Val="1743496098"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/SoPC/CPT_UNIT_CHRONO.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../CPT_UNIT_CHRONO.vhd"/>
+          <Attr Name="ImportTime" Val="1743496066"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/SoPC/chrono.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../chrono.vhd"/>
+          <Attr Name="ImportTime" Val="1743497441"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/imports/SoPC/Tregister_1b.vhd">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../Tregister_1b.vhd"/>
           <Attr Name="ImportTime" Val="1742901492"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -100,6 +133,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/SoPC/counter_3b_E.vhd">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../counter_3b_E.vhd"/>
           <Attr Name="ImportTime" Val="1742906546"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -108,6 +142,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/SoPC/mux_8x1x1b.vhd">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../mux_8x1x1b.vhd"/>
           <Attr Name="ImportTime" Val="1742906194"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -116,6 +151,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/SoPC/mux_8x1x4b.vhd">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../mux_8x1x4b.vhd"/>
           <Attr Name="ImportTime" Val="1742906224"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -124,6 +160,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/SoPC/register_8b1.vhd">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../register_8b1.vhd"/>
           <Attr Name="ImportTime" Val="1742901392"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -132,6 +169,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/SoPC/register_8b2.vhd">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../register_8b2.vhd"/>
           <Attr Name="ImportTime" Val="1742901392"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -140,6 +178,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/SoPC/transcoder_3v8.vhd">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../transcoder_3v8.vhd"/>
           <Attr Name="ImportTime" Val="1742906278"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -148,6 +187,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/SoPC/transcoder_7seg.vhd">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../transcoder_7seg.vhd"/>
           <Attr Name="ImportTime" Val="1742906272"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -156,6 +196,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/SoPC/display.vhd">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../display.vhd"/>
           <Attr Name="ImportTime" Val="1742906464"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -164,8 +205,7 @@
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="DISPLAY"/>
-        <Option Name="TopAutoSet" Val="TRUE"/>
+        <Option Name="TopModule" Val="CHRONOMETRE"/>
       </Config>
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
@@ -193,13 +233,17 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/counter_3b_E_tb_behav.wcfg">
+      <File Path="$PSRCDIR/sim_1/imports/SOPC/counter_3b_E_tb_behav.wcfg">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/counter_3b_E_tb_behav.wcfg"/>
+          <Attr Name="ImportTime" Val="1743184511"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/transcoder_3v8_tb_behav.wcfg">
+      <File Path="$PSRCDIR/sim_1/imports/SOPC/transcoder_3v8_tb_behav.wcfg">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/transcoder_3v8_tb_behav.wcfg"/>
+          <Attr Name="ImportTime" Val="1743185958"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>

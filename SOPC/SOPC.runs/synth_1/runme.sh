@@ -37,4 +37,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log DISPLAY.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source DISPLAY.tcl
+EAStep vivado -log CHRONOMETRE.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source CHRONOMETRE.tcl
