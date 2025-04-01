@@ -67,7 +67,7 @@ begin
     port map (
       CLK => CLK,
       R   => RESET,
-      D   => START,
+      D   => in_d_bascule,
       Q   => out_bascule
     );
 
@@ -84,7 +84,7 @@ begin
     port map (
       CLK => CLK,
       R   => RESET,
-      CE  => CE_1s,
+      CE  => ce_sec_unit,
       TC  => ce_sec_dec,
       S   => sec_unit
     );
@@ -122,5 +122,9 @@ begin
   -- Output assignments
   min_unit <= min_unit_int;
   min_dec  <= min_dec_int;
+    
+  in_d_bascule <= START or out_bascule;
+  ce_sec_unit <= out_bascule and CE_1s and NOT(WAIT_t) and NOT(out_comp);
+
 
 end behavior;
