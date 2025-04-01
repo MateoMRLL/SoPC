@@ -16,22 +16,23 @@ end CPT_UNIT_CHRONO;
 
 
 architecture Behavioral of CPT_UNIT_CHRONO is
-    signal count : STD_LOGIC_VECTOR(3 downto 0) := "0000";
+    signal count : std_logic_vector(3 downto 0) := "0000";
 begin
-    process(CLK, R)
+    process (CLK, R)
     begin
-      if R = '1' then
-        count <= '0000'; 
+        if R = '1' then  -- Asynchronous reset
+            count <= "0000";
         elsif rising_edge(CLK) then
             if CE = '1' then
-              if count = '1001' then 
-                count <= '0000'; 
-              else 
-                count <= count + 1;  -- Incrémentation du compteur
+                if count = "1001" then  -- If count reaches 9, reset to 0
+                    count <= "0000";
+                else
+                    count <= count + 1;
+                end if;
             end if;
-          end if; 
         end if;
     end process;
-    S <= count;  -- Sortie du compteur
+    
+    S  <= count;
     TC <= '1' when count = "1001" else '0';
-end Behavioral;
+end architecture Behavioral;

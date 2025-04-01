@@ -75,7 +75,7 @@ begin
   COMP1 : COMP_CHRONO
     port map (
       in1 => min_unit_int,
-      in2 => "0000",
+      in2 => min_dec_int,
       S   => out_comp
     );
 
