@@ -30,7 +30,9 @@ architecture behavior of CHRONOMETRE is
   );
   end component;
 
-  component CPT_SU_CHRONO
+
+
+  component CPT_DEC_CHRONO
   port (
     CLK : in std_logic;
     R   : in std_logic;
@@ -40,27 +42,8 @@ architecture behavior of CHRONOMETRE is
   );
   end component;
 
-  component CPT_SD_CHRONO
-  port (
-    CLK : in std_logic;
-    R   : in std_logic;
-    CE  : in std_logic; 
-    TC  : out std_logic;
-    S   : out std_logic_vector(3 downto 0)
-  );
-  end component;
 
-  component CPT_MU_CHRONO
-  port (
-    CLK : in std_logic;
-    R   : in std_logic;
-    CE  : in std_logic; 
-    TC  : out std_logic;
-    S   : out std_logic_vector(3 downto 0)
-  );
-  end component;
-
-  component CPT_MD_CHRONO
+  component CPT_UNIT_CHRONO
   port (
     CLK : in std_logic;
     R   : in std_logic;
@@ -97,7 +80,7 @@ begin
     );
 
   -- Seconds unit counter
-  C1 : CPT_SU_CHRONO
+  C1 : CPT_UNIT_CHRONO
     port map (
       CLK => CLK,
       R   => RESET,
@@ -107,7 +90,7 @@ begin
     );
 
   -- Seconds tens counter
-  C2 : CPT_SD_CHRONO
+  C2 : CPT_DEC_CHRONO
     port map (
       CLK => CLK,
       R   => RESET,
@@ -117,7 +100,7 @@ begin
     );
 
   -- Minutes unit counter
-  C3 : CPT_MU_CHRONO
+  C3 : CPT_UNIT_CHRONO
     port map (
       CLK => CLK,
       R   => RESET,
@@ -127,7 +110,7 @@ begin
     );
 
   -- Minutes tens counter
-  C4 : CPT_MD_CHRONO
+  C4 : CPT_DEC_CHRONO
     port map (
       CLK => CLK,
       R   => RESET,
