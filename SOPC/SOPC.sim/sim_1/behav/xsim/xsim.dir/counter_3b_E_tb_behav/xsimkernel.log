@@ -1,7 +1,4 @@
-Running: xsim.dir/counter_3b_E_tb_behav/xsimk -simmode gui -wdb counter_3b_E_tb_behav.wdb -simrunnum 0 -socket 33571
+Running: xsim.dir/counter_3b_E_tb_behav/xsimk -simmode gui -wdb counter_3b_E_tb_behav.wdb -simrunnum 0 -socket 37741
 Design successfully loaded
 Design Loading Memory Usage: 177592 KB (Peak: 177592 KB)
-Design Loading CPU Usage: 1340 ms
-Simulation completed
-Simulation Memory Usage: 267528 KB (Peak: 316860 KB)
-Simulation CPU Usage: 1340 ms
+Design Loading CPU Usage: 1330 ms
