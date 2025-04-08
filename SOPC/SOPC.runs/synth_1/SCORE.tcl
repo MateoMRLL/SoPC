@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.runs/synth_1/chronoscore.tcl"
+  variable script "/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.runs/synth_1/SCORE.tcl"
   variable category "vivado_synth"
 }
 
@@ -71,20 +71,12 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
-  /home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/Display/Tregister_1b.vhd
-  /home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/Display/counter_3b_E.vhd
-  /home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/Display/display.vhd
-  /home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/Display/mux_8x1x1b.vhd
-  /home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/Display/mux_8x1x4b.vhd
-  /home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/Display/register_8b1.vhd
-  /home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/Display/register_8b2.vhd
-  /home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/Display/transcoder_3v8.vhd
-  /home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/Display/transcoder_7seg.vhd
-  /home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/Display/chronoscore.vhd
+  /home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/Score/XOR_2b.vhd
+  /home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/Score/counterDec_4b_RE.vhd
+  /home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/Score/register_1b.vhd
+  /home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/Score/register_1b_E.vhd
+  /home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/Score/Score.vhd
 }
-read_edif /home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/Display/score.ngc
-read_edif /home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/Display/chronometer.ngc
-read_edif /home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/Display/timeGenerator.ngc
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -94,13 +86,16 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc /home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/constrs_1/imports/Display/Basys-3.xdc
+set_property used_in_implementation false [get_files /home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/constrs_1/imports/Display/Basys-3.xdc]
+
 set_param ips.enableIPCacheLiteLoad 1
 
 read_checkpoint -auto_incremental -incremental /home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/utils_1/imports/synth_1/DISPLAY.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
-synth_design -top chronoscore -part xc7a35tcpg236-1 -flatten_hierarchy none
+synth_design -top SCORE -part xc7a35tcpg236-1 -flatten_hierarchy none
 OPTRACE "synth_design" END { }
 if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
  send_msg_id runtcl-6 info "Synthesis results are not added to the cache due to CRITICAL_WARNING"
@@ -110,10 +105,10 @@ if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
 OPTRACE "write_checkpoint" START { CHECKPOINT }
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef chronoscore.dcp
+write_checkpoint -force -noxdef SCORE.dcp
 OPTRACE "write_checkpoint" END { }
 OPTRACE "synth reports" START { REPORT }
-generate_parallel_reports -reports { "report_utilization -file chronoscore_utilization_synth.rpt -pb chronoscore_utilization_synth.pb"  } 
+generate_parallel_reports -reports { "report_utilization -file SCORE_utilization_synth.rpt -pb SCORE_utilization_synth.pb"  } 
 OPTRACE "synth reports" END { }
 file delete __synthesis_is_running__
 close [open __synthesis_is_complete__ w]
