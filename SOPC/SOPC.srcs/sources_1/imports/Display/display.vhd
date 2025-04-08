@@ -29,6 +29,7 @@ signal mux_4b_sig : std_logic_vector(3 downto 0 );
 signal out_counter_3b_sig : std_logic_vector( 2 downto 0 ); 
 signal out_trans_3v8_sig : std_logic_vector(7 downto 0); 
 signal out_trans_7seg_sig : std_logic_vector(6 downto 0); 
+signal in_register_8b2 : std_logic_vector(7 downto 0); 
 
 
 component counter_3b_E
@@ -180,8 +181,11 @@ U6 : transcoder_7seg
 U7 : register_8b2
   port map(
     CLK => CLK, 
-    D => out_trans_7seg_sig & mux_1b_sig,
+    D => in_register_8b2,
     O => LEDS
   );
+  
+  in_register_8b2 <= mux_1b_sig & out_trans_7seg_sig;
+  
 
 end behavior; 

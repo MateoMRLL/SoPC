@@ -10,17 +10,16 @@ end transcoder_7seg;
 architecture Behavioral of transcoder_7seg is
 begin
 
-        -- Utilisation de when else pour les différentes valeurs possibles
-       O <= "1111110" when A = "0000" else  -- "0" => not "0000001"
-     "0110000" when A = "0001" else  -- "1" => not "1001111"
-     "1101101" when A = "0010" else  -- "2"
-     "1111001" when A = "0011" else  -- "3"
-     "0110011" when A = "0100" else  -- "4"
-     "1011011" when A = "0101" else  -- "5"
-     "1011111" when A = "0110" else  -- "6"
-     "1110000" when A = "0111" else  -- "7"
-     "1111111" when A = "1000" else  -- "8"
-     "1111011" when A = "1001" else  -- "9"
-     "0000000"; -- défaut inversé de "1111111"
+        O <=  "1000000" when A = "0000" else -- NOT 0111111 → "1000000"
+      "1111001" when A = "0001" else -- NOT 0000110 → "1111001"
+      "0100100" when A = "0010" else -- NOT 1011011 → "0100100"
+      "0110000" when A = "0011" else -- NOT 1001111 → "0110000"
+      "0011001" when A = "0100" else -- NOT 1100110 → "0011001"
+      "0010010" when A = "0101" else -- NOT 1101101 → "0010010"
+      "0000010" when A = "0110" else -- NOT 1111100 → "0000011"
+      "1111000" when A = "0111" else -- NOT 1000111 → "0111000"
+      "0000000" when A = "1000" else -- NOT 1101111 → "0010000"
+      "0010000" when A = "1001" else -- NOT 1111001 → "0000110"
+      "0000110";                     -- Valeur d'erreur (NOT 1111001)
 
 end Behavioral;

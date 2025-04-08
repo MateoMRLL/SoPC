@@ -42,6 +42,7 @@ entity chronoscore is
 end chronoscore ;
 
 architecture Behavioral of chronoscore is
+
     component timeGenerator
         Port ( GCLK       : in  std_logic;
                TEST_HSLS  : in  std_logic;
@@ -118,16 +119,10 @@ architecture Behavioral of chronoscore is
     signal an_s: std_logic_vector(7 downto 0);
     signal leds_s: std_logic_vector(7 downto 0);
     
-    signal NRESET : std_logic;
-    signal BPL_OUT : std_logic;
-    signal BPV_OUT : std_logic;
-    
     -----------------------------------------------
 
 begin
-   NRESET <= NOT (RESET);
-   BPL_OUT <= BPL AND NOT WAIT_t;
-   BPV_OUT <= BPV AND NOT WAIT_t;
+
   U0 : timeGenerator 
         port map (  GCLK      => GCLK,
                     TEST_HSLS => TEST_HSLS,    
@@ -141,7 +136,7 @@ begin
                     CE_1s     => CE_1s_int,
                     START     => START,
                     WAIT_t    => WAIT_t,
-                    RESET     => NRESET,	-- PB/RESET Active Low
+                    RESET     => NOT RESET,	-- PB/RESET Active Low
                     -------------------------
                     sec_unit  => SU,
                     sec_dec   => SD,
@@ -151,8 +146,8 @@ begin
   U2 : score 
         port map (  CLK      => CLK_int,
                     CE_1ms   => CE_1ms_int,
-                    BPL      => BPL_OUT,
-                    BPV      => BPV_OUT,
+                    BPL      => BPL AND NOT WAIT_t,
+                    BPV      => BPV AND NOT WAIT_t,
                     BPreset  => BPreset,
                     -------------------------
                     vis_unit => VU,

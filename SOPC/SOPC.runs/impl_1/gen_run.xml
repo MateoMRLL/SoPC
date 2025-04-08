@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1744109721">
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="chronoscore_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS" Name="chronoscore_routed.rqs"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BG-BGN" Name="chronoscore.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="chronoscore.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="chronoscore.ltx"/>
+  <File Type="RBD_FILE" Name="chronoscore.rbd"/>
+  <File Type="NPI_FILE" Name="chronoscore.npi"/>
+  <File Type="RNPI_FILE" Name="chronoscore.rnpi"/>
+  <File Type="CFI_FILE" Name="chronoscore.cfi"/>
+  <File Type="RCFI_FILE" Name="chronoscore.rcfi"/>
+  <File Type="PL-PDI-FILE" Name="chronoscore_pld.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="chronoscore_boot.pdi"/>
+  <File Type="RDI-RDI" Name="chronoscore.vdi"/>
+  <File Type="PDI-FILE" Name="chronoscore.pdi"/>
+  <File Type="BITSTR-MMI" Name="chronoscore.mmi"/>
+  <File Type="BITSTR-BMM" Name="chronoscore_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="chronoscore.nky"/>
+  <File Type="BITSTR-RBT" Name="chronoscore.rbt"/>
+  <File Type="BITSTR-MSK" Name="chronoscore.msk"/>
+  <File Type="BG-BIN" Name="chronoscore.bin"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <File Type="BG-BIT" Name="chronoscore.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="chronoscore_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="chronoscore_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="chronoscore_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="chronoscore_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="chronoscore_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="chronoscore_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="chronoscore_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="chronoscore_postroute_physopt.dcp"/>
+  <File Type="BG-DRC" Name="chronoscore.drc"/>
+  <File Type="ROUTE-RQS-PB" Name="chronoscore_rqs_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="chronoscore_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="chronoscore_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW" Name="chronoscore_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="chronoscore_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="chronoscore_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="chronoscore_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="chronoscore_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="chronoscore_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="chronoscore_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="chronoscore_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="chronoscore_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="chronoscore_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="chronoscore_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="chronoscore_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="chronoscore_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="chronoscore_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="chronoscore_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="chronoscore_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="chronoscore_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="chronoscore_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="chronoscore_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="chronoscore_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="chronoscore_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="chronoscore_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="chronoscore_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="chronoscore_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="chronoscore_postplace_pwropt.dcp"/>
+  <File Type="PLACE-RQA-PB" Name="chronoscore_rqa_placed.pb"/>
+  <File Type="PLACE-TIMING" Name="chronoscore_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="chronoscore_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="chronoscore_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="chronoscore_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="chronoscore_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="chronoscore_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="chronoscore_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="chronoscore_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="chronoscore_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="chronoscore_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="chronoscore_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="chronoscore_pwropt.dcp"/>
+  <File Type="OPT-RQA-PB" Name="chronoscore_rqa_opted.pb"/>
+  <File Type="OPT-HWDEF" Name="chronoscore.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="chronoscore_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="chronoscore_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="chronoscore_opt.dcp"/>
+  <File Type="OPT-TIMING" Name="chronoscore_timing_summary_opted.rpt"/>
+  <File Type="REPORTS-TCL" Name="chronoscore_reports.tcl"/>
+  <File Type="INIT-TIMING" Name="chronoscore_timing_summary_init.rpt"/>
+  <File Type="PA-TCL" Name="chronoscore.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Display/score.ngc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Display/score.ngc"/>
+        <Attr Name="ImportTime" Val="1743503526"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Display/chronometer.ngc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Display/chronometer.ngc"/>
+        <Attr Name="ImportTime" Val="1743501589"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Display/timeGenerator.ngc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Display/timeGenerator.ngc"/>
+        <Attr Name="ImportTime" Val="1743501582"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Display/Tregister_1b.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Display/Tregister_1b.vhd"/>
+        <Attr Name="ImportTime" Val="1743183306"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Display/counter_3b_E.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Display/counter_3b_E.vhd"/>
+        <Attr Name="ImportTime" Val="1743183306"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Display/display.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Display/display.vhd"/>
+        <Attr Name="ImportTime" Val="1743183306"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Display/mux_8x1x1b.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Display/mux_8x1x1b.vhd"/>
+        <Attr Name="ImportTime" Val="1743183306"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Display/mux_8x1x4b.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Display/mux_8x1x4b.vhd"/>
+        <Attr Name="ImportTime" Val="1743183306"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Display/register_8b1.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Display/register_8b1.vhd"/>
+        <Attr Name="ImportTime" Val="1743183306"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Display/register_8b2.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Display/register_8b2.vhd"/>
+        <Attr Name="ImportTime" Val="1743183306"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Display/transcoder_3v8.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Display/transcoder_3v8.vhd"/>
+        <Attr Name="ImportTime" Val="1744105547"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Display/transcoder_7seg.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Display/transcoder_7seg.vhd"/>
+        <Attr Name="ImportTime" Val="1744100853"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Display/chronoscore.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Display/chronoscore.vhd"/>
+        <Attr Name="ImportTime" Val="1743501654"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="chronoscore"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Display/Basys-3.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Display/Basys-3.xdc"/>
+        <Attr Name="ImportTime" Val="1743503721"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/DISPLAY.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="UsedInSteps" Val="synth_1_copy_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

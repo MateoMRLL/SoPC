@@ -9,13 +9,12 @@ end transcoder_3v8;
 
 architecture Behavioral of transcoder_3v8 is
 begin
-        -- Utilisation de when else pour la conversion
-        O <= "00000001" when A = "000" else
-             "00000010" when A = "001" else
-             "00000100" when A = "010" else
-             "00001000" when A = "011" else
-             "00010000" when A = "100" else
-             "00100000" when A = "101" else
-             "01000000" when A = "110" else
-             "10000000";  -- Cas pour A = "111"
+O <= "11111110" when A = "000" else
+     "11111101" when A = "001" else
+     "11111011" when A = "010" else
+     "11110111" when A = "011" else
+     "11101111" when A = "100" else
+     "11011111" when A = "101" else
+     "10111111" when A = "110" else
+     "01111111";  -- Cas pour A = "111"
 end Behavioral;

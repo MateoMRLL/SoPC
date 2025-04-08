@@ -3,22 +3,22 @@
 # SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Tue Apr  8 10:53:30 2025
-# Process ID         : 12867
+# Start of session at: Tue Apr  8 12:54:21 2025
+# Process ID         : 33754
 # Current directory  : /home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.runs/synth_1
-# Command line       : vivado -log SCORE.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SCORE.tcl
-# Log file           : /home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.runs/synth_1/SCORE.vds
+# Command line       : vivado -log chronoscore.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source chronoscore.tcl
+# Log file           : /home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.runs/synth_1/chronoscore.vds
 # Journal file       : /home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.runs/synth_1/vivado.jou
 # Running On         : CASE
 # Platform           : unknown
 # Operating System   : unknown
 # Processor Detail   : Intel(R) Core(TM) i5-7300U CPU @ 2.60GHz
-# CPU Frequency      : 2899.602 MHz
+# CPU Frequency      : 3500.001 MHz
 # CPU Physical cores : 2
 # CPU Logical cores  : 4
 # Host memory        : 16499 MB
 # Swap memory        : 4294 MB
 # Total Virtual      : 20794 MB
-# Available Virtual  : 16723 MB
+# Available Virtual  : 14308 MB
 #-----------------------------------------------------------
-source SCORE.tcl -notrace
+source chronoscore.tcl -notrace
