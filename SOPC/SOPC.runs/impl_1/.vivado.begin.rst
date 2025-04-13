@@ -1,90 +1,50 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="dlanyar" Host="CASE" Pid="21688" HostCore="4" HostMemory="16112960">
+    <Process Command="vivado" Owner="dlanyar" Host="CASE" Pid="3392" HostCore="4" HostMemory="16114168">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="dlanyar" Host="CASE" Pid="22339" HostCore="4" HostMemory="16112960">
+    <Process Command="vivado" Owner="dlanyar" Host="CASE" Pid="3873" HostCore="4" HostMemory="16114168">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="dlanyar" Host="CASE" Pid="22936" HostCore="4" HostMemory="16112960">
+    <Process Command="vivado" Owner="dlanyar" Host="CASE" Pid="5935" HostCore="4" HostMemory="16114168">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="dlanyar" Host="CASE" Pid="23469" HostCore="4" HostMemory="16112960">
+    <Process Command="vivado" Owner="dlanyar" Host="CASE" Pid="6426" HostCore="4" HostMemory="16114168">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="dlanyar" Host="CASE" Pid="24695" HostCore="4" HostMemory="16112960">
+    <Process Command="vivado" Owner="dlanyar" Host="CASE" Pid="8132" HostCore="4" HostMemory="16114168">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="dlanyar" Host="CASE" Pid="25238" HostCore="4" HostMemory="16112960">
+    <Process Command="vivado" Owner="dlanyar" Host="CASE" Pid="8610" HostCore="4" HostMemory="16114168">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="dlanyar" Host="CASE" Pid="26500" HostCore="4" HostMemory="16112960">
+    <Process Command="vivado" Owner="dlanyar" Host="CASE" Pid="9364" HostCore="4" HostMemory="16114168">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="dlanyar" Host="CASE" Pid="27011" HostCore="4" HostMemory="16112960">
+    <Process Command="vivado" Owner="dlanyar" Host="CASE" Pid="9853" HostCore="4" HostMemory="16114168">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="dlanyar" Host="CASE" Pid="28213" HostCore="4" HostMemory="16112960">
+    <Process Command="vivado" Owner="dlanyar" Host="CASE" Pid="10698" HostCore="4" HostMemory="16114168">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="dlanyar" Host="CASE" Pid="28695" HostCore="4" HostMemory="16112960">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="dlanyar" Host="CASE" Pid="29602" HostCore="4" HostMemory="16112960">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="dlanyar" Host="CASE" Pid="30115" HostCore="4" HostMemory="16112960">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="dlanyar" Host="CASE" Pid="31127" HostCore="4" HostMemory="16112960">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="dlanyar" Host="CASE" Pid="31629" HostCore="4" HostMemory="16112960">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="dlanyar" Host="CASE" Pid="32431" HostCore="4" HostMemory="16112960">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="dlanyar" Host="CASE" Pid="32930" HostCore="4" HostMemory="16112960">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="dlanyar" Host="CASE" Pid="33988" HostCore="4" HostMemory="16112960">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="dlanyar" Host="CASE" Pid="34470" HostCore="4" HostMemory="16112960">
+    <Process Command="vivado" Owner="dlanyar" Host="CASE" Pid="11230" HostCore="4" HostMemory="16114168">
     </Process>
 </ProcessHandle>

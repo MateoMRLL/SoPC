@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1744109657" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/DISPLAY.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1744550062" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/DISPLAY.dcp">
   <File Type="VDS-TIMINGSUMMARY" Name="chronoscore_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="chronoscore.dcp"/>
   <File Type="RDS-UTIL-PB" Name="chronoscore_utilization_synth.pb"/>
@@ -11,22 +11,6 @@
   <File Type="PA-TCL" Name="chronoscore.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/imports/Display/score.ngc">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../Display/score.ngc"/>
-        <Attr Name="ImportTime" Val="1743503526"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/Display/chronometer.ngc">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../Display/chronometer.ngc"/>
-        <Attr Name="ImportTime" Val="1743501589"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/imports/Display/timeGenerator.ngc">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../Display/timeGenerator.ngc"/>
@@ -35,10 +19,74 @@
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/imports/Chrono/BASCULE_CHRONO.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Chrono/BASCULE_CHRONO.vhd"/>
+        <Attr Name="ImportTime" Val="1743496324"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Chrono/COMP_CHRONO.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Chrono/COMP_CHRONO.vhd"/>
+        <Attr Name="ImportTime" Val="1743496946"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Chrono/CPT_DEC_CHRONO.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Chrono/CPT_DEC_CHRONO.vhd"/>
+        <Attr Name="ImportTime" Val="1743496098"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Chrono/CPT_UNIT_CHRONO.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Chrono/CPT_UNIT_CHRONO.vhd"/>
+        <Attr Name="ImportTime" Val="1743496066"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Score/Score.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Score/Score.vhd"/>
+        <Attr Name="ImportTime" Val="1744101598"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/Display/Tregister_1b.vhd">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../Display/Tregister_1b.vhd"/>
         <Attr Name="ImportTime" Val="1743183306"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Score/XOR_2b.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Score/XOR_2b.vhd"/>
+        <Attr Name="ImportTime" Val="1744102837"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Chrono/chrono.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Chrono/chrono.vhd"/>
+        <Attr Name="ImportTime" Val="1743497441"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Score/counterDec_4b_RE.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Score/counterDec_4b_RE.vhd"/>
+        <Attr Name="ImportTime" Val="1744101781"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -71,6 +119,22 @@
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../Display/mux_8x1x4b.vhd"/>
         <Attr Name="ImportTime" Val="1743183306"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Score/register_1b.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Score/register_1b.vhd"/>
+        <Attr Name="ImportTime" Val="1744101832"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Score/register_1b_E.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Score/register_1b_E.vhd"/>
+        <Attr Name="ImportTime" Val="1744101802"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -118,7 +182,6 @@
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="chronoscore"/>
-      <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
