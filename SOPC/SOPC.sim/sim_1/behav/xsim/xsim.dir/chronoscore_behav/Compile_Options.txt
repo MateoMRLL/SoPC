@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "secureip" --snapshot "chronoscore_behav" "xil_defaultlib.chronoscore" -log "elaborate.log" 
