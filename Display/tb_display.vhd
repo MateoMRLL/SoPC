@@ -103,14 +103,14 @@ begin
         wait for 10 ms; -- Attendre un peu
 
         -- Modifier quelques entrées pour vérifier que les LEDS changent
-        data_disp1_L0 <= "1000"; -- 8
-        data_disp1_L1 <= "1001"; -- 9
-        data_disp1_R0 <= "1010"; -- A (en hexadécimal, 10)
-        data_disp1_R1 <= "1011"; -- B (11)
-        data_disp2_L0 <= "1100"; -- C (12)
-        data_disp2_L1 <= "1101"; -- D (13)
-        data_disp2_R0 <= "1110"; -- E (14)
-        data_disp2_R1 <= "1111"; -- F (15)
+        data_disp1_L0 <= "0001"; -- 1
+        data_disp1_L1 <= "0010"; -- 2
+        data_disp1_R0 <= "0011"; -- 3
+        data_disp1_R1 <= "0100"; -- 4
+        data_disp2_L0 <= "0101"; -- 5
+        data_disp2_L1 <= "0110"; -- 6
+        data_disp2_R0 <= "0111"; -- 7
+        data_disp2_R1 <= "1001"; -- 8
 
         wait for 10 ms;
 

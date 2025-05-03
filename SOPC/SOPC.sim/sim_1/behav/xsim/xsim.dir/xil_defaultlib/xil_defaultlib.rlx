@@ -3,7 +3,7 @@
 Nov  8 2024
 22:36:55
 /home/dlanyar/Documents/POLYTECH/SoPC/Chrono/chrono_tb.vhd,1745867873,vhdl,,,,tb_chronometer,,,,,,,,
-/home/dlanyar/Documents/POLYTECH/SoPC/Display/tb_display.vhd,1745868651,vhdl,,,,tb_display,,,,,,,,
+/home/dlanyar/Documents/POLYTECH/SoPC/Display/tb_display.vhd,1745960520,vhdl,,,,tb_display,,,,,,,,
 /home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sim_1/imports/SoPC/counter_3b_E_tb.vhd,1743184101,vhdl,,,,counter_3b_e_tb,,,,,,,,
 /home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sim_1/imports/SoPC/transcoder_3v8_tb.vhd,1743184665,vhdl,,,,transcoder_3v8_tb,,,,,,,,
 /home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/Chrono/BASCULE_CHRONO.vhd,1743496324,vhdl,,,,bascule_chrono,,,,,,,,

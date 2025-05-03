@@ -59,7 +59,7 @@
     <Option Name="IPUserFilesDir" Val="$PIPUSERFILESDIR"/>
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
-    <Option Name="WTXSimLaunchSim" Val="15"/>
+    <Option Name="WTXSimLaunchSim" Val="16"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -90,17 +90,8 @@
   <FileSets Version="1" Minor="32">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sources_1/imports/Display/timeGenerator.ngc">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Display/timeGenerator.ngc"/>
-          <Attr Name="ImportTime" Val="1743501582"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/Display/Tregister_1b.vhd">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../Display/Tregister_1b.vhd"/>
           <Attr Name="ImportTime" Val="1743183306"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -109,7 +100,6 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/Display/counter_3b_E.vhd">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../Display/counter_3b_E.vhd"/>
           <Attr Name="ImportTime" Val="1743183306"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -118,7 +108,6 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/Display/mux_8x1x1b.vhd">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../Display/mux_8x1x1b.vhd"/>
           <Attr Name="ImportTime" Val="1743183306"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -127,7 +116,6 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/Display/mux_8x1x4b.vhd">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../Display/mux_8x1x4b.vhd"/>
           <Attr Name="ImportTime" Val="1743183306"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -136,7 +124,6 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/Display/register_8b1.vhd">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../Display/register_8b1.vhd"/>
           <Attr Name="ImportTime" Val="1743183306"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -145,7 +132,6 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/Display/register_8b2.vhd">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../Display/register_8b2.vhd"/>
           <Attr Name="ImportTime" Val="1743183306"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -154,7 +140,6 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/Display/transcoder_3v8.vhd">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../Display/transcoder_3v8.vhd"/>
           <Attr Name="ImportTime" Val="1744105547"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -163,7 +148,6 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/Display/transcoder_7seg.vhd">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../Display/transcoder_7seg.vhd"/>
           <Attr Name="ImportTime" Val="1744100853"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -172,7 +156,6 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/Display/display.vhd">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../Display/display.vhd"/>
           <Attr Name="ImportTime" Val="1743183306"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -269,6 +252,15 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/imports/Display/timeGenerator.ngc">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Display/timeGenerator.ngc"/>
+          <Attr Name="ImportTime" Val="1743501582"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/imports/Display/chronoscore.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
@@ -280,7 +272,7 @@
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="timeGenerator"/>
+        <Option Name="TopModule" Val="DISPLAY"/>
       </Config>
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
@@ -410,7 +402,9 @@
   <Runs Version="1" Minor="22">
     <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a35tcpg236-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="true" IncrementalCheckpoint="$PSRCDIR/utils_1/imports/synth_1/DISPLAY.dcp" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
         <Step Id="synth_design">
           <Option Id="FlattenHierarchy">1</Option>
         </Step>
@@ -428,10 +422,10 @@
         </Step>
       </Strategy>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2024" CtrlBit="true">
-        <ReportConfig DisplayName="synthesis_report" Name="synth_1_copy_1_synth_synthesis_report_0" Spec="" RunStep="synth_design" ReportFile="timeGenerator.vds">
+        <ReportConfig DisplayName="synthesis_report" Name="synth_1_copy_1_synth_synthesis_report_0" Spec="" RunStep="synth_design" ReportFile="DISPLAY.vds">
           <ReportConfigOption Name="dummy_option" Type="string"/>
         </ReportConfig>
-        <ReportConfig DisplayName="Utilization - Synth Design" Name="synth_1_copy_1_synth_report_utilization_0" Spec="report_utilization" RunStep="synth_design" ReportFile="timeGenerator_utilization_synth_1.rpt" Version="1" Minor="0">
+        <ReportConfig DisplayName="Utilization - Synth Design" Name="synth_1_copy_1_synth_report_utilization_0" Spec="report_utilization" RunStep="synth_design" ReportFile="DISPLAY_utilization_synth_1.rpt" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
           <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
         </ReportConfig>
@@ -441,7 +435,9 @@
     </Run>
     <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" SynthRun="synth_1" IncludeInArchive="true" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/impl_1" LaunchOptions="-jobs 2 " AutoRQSDir="$PSRCDIR/utils_1/imports/impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

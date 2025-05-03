@@ -7,7 +7,7 @@
   **** SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
   **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
   **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-  **** Start of session at: Mon Apr 28 11:24:47 2025
+  **** Start of session at: Wed Apr 30 19:06:35 2025
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
@@ -22,9 +22,9 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 15936
+INFO: [Synth 8-7075] Helper process launched with PID 13321
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1844.438 ; gain = 427.832 ; free physical = 621 ; free virtual = 10931
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1844.469 ; gain = 427.832 ; free physical = 6171 ; free virtual = 14341
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'DISPLAY' [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/Display/display.vhd:25]
 INFO: [Synth 8-3491] module 'counter_3b_E' declared at '/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/Display/counter_3b_E.vhd:7' bound to instance 'U0' of component 'counter_3b_E' [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/Display/display.vhd:120]
@@ -53,18 +53,18 @@ INFO: [Synth 8-638] synthesizing module 'register_8b2' [/home/dlanyar/Documents/
 INFO: [Synth 8-256] done synthesizing module 'register_8b2' (0#1) [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/Display/register_8b2.vhd:11]
 INFO: [Synth 8-256] done synthesizing module 'DISPLAY' (0#1) [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/sources_1/imports/Display/display.vhd:25]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1915.406 ; gain = 498.801 ; free physical = 531 ; free virtual = 10842
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1915.438 ; gain = 498.801 ; free physical = 6077 ; free virtual = 14247
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1933.219 ; gain = 516.613 ; free physical = 531 ; free virtual = 10842
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1933.250 ; gain = 516.613 ; free physical = 6077 ; free virtual = 14247
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1933.219 ; gain = 516.613 ; free physical = 531 ; free virtual = 10842
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1933.250 ; gain = 516.613 ; free physical = 6077 ; free virtual = 14247
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1933.219 ; gain = 0.000 ; free physical = 531 ; free virtual = 10842
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1933.250 ; gain = 0.000 ; free physical = 6077 ; free virtual = 14247
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -73,68 +73,71 @@ Parsing XDC File [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/constrs_1
 WARNING: [Vivado 12-584] No ports matched 'GCLK'. [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/constrs_1/imports/Display/Basys-3.xdc:7]
 CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/constrs_1/imports/Display/Basys-3.xdc:7]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'TEST'. [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/constrs_1/imports/Display/Basys-3.xdc:12]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/constrs_1/imports/Display/Basys-3.xdc:12]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'START'. [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/constrs_1/imports/Display/Basys-3.xdc:13]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/constrs_1/imports/Display/Basys-3.xdc:13]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'WAIT_t'. [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/constrs_1/imports/Display/Basys-3.xdc:14]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/constrs_1/imports/Display/Basys-3.xdc:14]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'RESET'. [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/constrs_1/imports/Display/Basys-3.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'GCLK'. [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/constrs_1/imports/Display/Basys-3.xdc:8]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports GCLK]'. [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/constrs_1/imports/Display/Basys-3.xdc:8]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'TEST'. [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/constrs_1/imports/Display/Basys-3.xdc:15]
 CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/constrs_1/imports/Display/Basys-3.xdc:15]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'TEST_HSLS'. [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/constrs_1/imports/Display/Basys-3.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'START'. [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/constrs_1/imports/Display/Basys-3.xdc:16]
 CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/constrs_1/imports/Display/Basys-3.xdc:16]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'BPreset'. [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/constrs_1/imports/Display/Basys-3.xdc:66]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/constrs_1/imports/Display/Basys-3.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'WAIT_t'. [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/constrs_1/imports/Display/Basys-3.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/constrs_1/imports/Display/Basys-3.xdc:17]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'BPL'. [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/constrs_1/imports/Display/Basys-3.xdc:68]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/constrs_1/imports/Display/Basys-3.xdc:68]
+WARNING: [Vivado 12-584] No ports matched 'RESET'. [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/constrs_1/imports/Display/Basys-3.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/constrs_1/imports/Display/Basys-3.xdc:18]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'BPV'. [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/constrs_1/imports/Display/Basys-3.xdc:69]
+WARNING: [Vivado 12-584] No ports matched 'TEST_HSLS'. [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/constrs_1/imports/Display/Basys-3.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/constrs_1/imports/Display/Basys-3.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BPreset'. [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/constrs_1/imports/Display/Basys-3.xdc:69]
 CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/constrs_1/imports/Display/Basys-3.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BPL'. [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/constrs_1/imports/Display/Basys-3.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/constrs_1/imports/Display/Basys-3.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BPV'. [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/constrs_1/imports/Display/Basys-3.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/constrs_1/imports/Display/Basys-3.xdc:72]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 Finished Parsing XDC File [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/constrs_1/imports/Display/Basys-3.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/constrs_1/imports/Display/Basys-3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/DISPLAY_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/DISPLAY_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2070.969 ; gain = 0.000 ; free physical = 541 ; free virtual = 10847
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2070.000 ; gain = 0.000 ; free physical = 6082 ; free virtual = 14253
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2070.969 ; gain = 0.000 ; free physical = 541 ; free virtual = 10847
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2070.000 ; gain = 0.000 ; free physical = 6082 ; free virtual = 14253
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2070.969 ; gain = 654.363 ; free physical = 542 ; free virtual = 10848
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2070.000 ; gain = 653.363 ; free physical = 6123 ; free virtual = 14293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2078.973 ; gain = 662.367 ; free physical = 542 ; free virtual = 10848
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2078.004 ; gain = 661.367 ; free physical = 6123 ; free virtual = 14293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2078.973 ; gain = 662.367 ; free physical = 542 ; free virtual = 10848
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2078.004 ; gain = 661.367 ; free physical = 6123 ; free virtual = 14293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Preparing Guide Design
 ---------------------------------------------------------------------------------
 CRITICAL WARNING: [Synth 8-6895] The reference checkpoint /home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.srcs/utils_1/imports/synth_1/DISPLAY.dcp is not suitable for use with incremental synthesis for this design. Please regenerate the checkpoint for this design with -incremental_synth switch in the same Vivado session that synth_design has been run. Synthesis will continue with the default flow
 ---------------------------------------------------------------------------------
-Finished Doing Graph Differ : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2078.973 ; gain = 662.367 ; free physical = 542 ; free virtual = 10849
+Finished Doing Graph Differ : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2078.004 ; gain = 661.367 ; free physical = 6121 ; free virtual = 14292
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Preparing Guide Design : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2078.973 ; gain = 662.367 ; free physical = 542 ; free virtual = 10849
+Finished Preparing Guide Design : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2078.004 ; gain = 661.367 ; free physical = 6121 ; free virtual = 14292
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2078.973 ; gain = 662.367 ; free physical = 542 ; free virtual = 10848
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2078.004 ; gain = 661.367 ; free physical = 6119 ; free virtual = 14291
 ---------------------------------------------------------------------------------
 
 
@@ -178,25 +181,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2078.973 ; gain = 662.367 ; free physical = 568 ; free virtual = 10878
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2078.004 ; gain = 661.367 ; free physical = 6112 ; free virtual = 14288
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 2105.973 ; gain = 689.367 ; free physical = 483 ; free virtual = 10789
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2108.004 ; gain = 691.367 ; free physical = 6083 ; free virtual = 14263
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 2105.973 ; gain = 689.367 ; free physical = 483 ; free virtual = 10789
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2118.020 ; gain = 701.383 ; free physical = 6075 ; free virtual = 14255
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 2114.988 ; gain = 698.383 ; free physical = 475 ; free virtual = 10781
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2119.027 ; gain = 702.391 ; free physical = 6075 ; free virtual = 14255
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -208,19 +211,19 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 2284.801 ; gain = 868.195 ; free physical = 311 ; free virtual = 10617
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2279.840 ; gain = 863.203 ; free physical = 5949 ; free virtual = 14125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 2284.801 ; gain = 868.195 ; free physical = 311 ; free virtual = 10617
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2279.840 ; gain = 863.203 ; free physical = 5949 ; free virtual = 14125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 2284.801 ; gain = 868.195 ; free physical = 311 ; free virtual = 10617
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2279.840 ; gain = 863.203 ; free physical = 5949 ; free virtual = 14125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -247,30 +250,30 @@ Report Cell Usage:
 |9     |OBUF  |    16|
 +------+------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 2284.801 ; gain = 868.195 ; free physical = 311 ; free virtual = 10617
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2279.840 ; gain = 863.203 ; free physical = 5949 ; free virtual = 14125
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 1 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 2284.801 ; gain = 730.445 ; free physical = 311 ; free virtual = 10617
-Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 2284.809 ; gain = 868.195 ; free physical = 311 ; free virtual = 10617
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 2279.840 ; gain = 726.453 ; free physical = 5949 ; free virtual = 14125
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2279.848 ; gain = 863.203 ; free physical = 5949 ; free virtual = 14125
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2284.809 ; gain = 0.000 ; free physical = 311 ; free virtual = 10617
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2279.848 ; gain = 0.000 ; free physical = 5941 ; free virtual = 14126
 INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2308.812 ; gain = 0.000 ; free physical = 399 ; free virtual = 10705
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2303.852 ; gain = 0.000 ; free physical = 6059 ; free virtual = 14258
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 Synth Design complete | Checksum: e42b5273
 INFO: [Common 17-83] Releasing license: Synthesis
-44 Infos, 10 Warnings, 10 Critical Warnings and 0 Errors encountered.
+44 Infos, 11 Warnings, 11 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:36 . Memory (MB): peak = 2308.812 ; gain = 930.832 ; free physical = 399 ; free virtual = 10705
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1480.574; main = 1480.574; forked = 267.892
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3021.352; main = 2308.816; forked = 942.375
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:31 . Memory (MB): peak = 2303.852 ; gain = 922.871 ; free physical = 6058 ; free virtual = 14257
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1493.112; main = 1486.441; forked = 269.139
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3020.383; main = 2303.855; forked = 942.375
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2332.824 ; gain = 0.000 ; free physical = 399 ; free virtual = 10705
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2327.863 ; gain = 0.000 ; free physical = 6042 ; free virtual = 14249
 INFO: [Common 17-1381] The checkpoint '/home/dlanyar/Documents/POLYTECH/SoPC/SOPC/SOPC.runs/synth_1/DISPLAY.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file DISPLAY_utilization_synth.rpt -pb DISPLAY_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Apr 28 11:25:27 2025...
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 30 19:07:10 2025...
